@@ -37,11 +37,11 @@ const agent = createAgent({
   tools: [webSearch],
 });
 
-console.log(
-  await agent.invoke({
-    messages: [{ role: "user", content: "What's the weather in Tokyo?" }],
-  })
-);
+// console.log(
+//   await agent.invoke({
+//     messages: [{ role: "user", content: "hi" }],
+//   })
+// );
 
 app.use(cors());
 app.use(express.json());
